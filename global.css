@@ -1,0 +1,88 @@
+@font-face {
+	font-family: "DM Sans";
+	src: url('./assets/fonts/DMSans-Bold.ttf');
+}
+
+body {
+    background: #000;
+    max-height: 100%;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.wrapper {
+    display: grid;
+    align-items: center;
+    font-family: 'DM Sans';
+}
+
+h1, h2, h3, h4, h5, h6, label {
+    text-align: center;     
+    margin: 5vh auto;
+    font-weight: normal;
+    background-image: linear-gradient(90deg, rgb(92, 198, 230), rgb(214, 126, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;                
+    transition: all 2s ease-in-out;
+}
+
+h1 {
+    font-size: min(14vw, 14vh);
+}
+
+h2 {                    
+    font-size: min(9vw, 9vh);
+}
+
+h3 {                    
+    font-size: min(7vw, 7vh);
+    margin-bottom: 0;
+}
+
+h6 {               
+    margin: 2vh 0;     
+    font-size: max(1vw, 2vh);
+}
+
+a:visited {
+    color: white;
+}
+
+.my-button {
+    font-family: 'DM Sans';
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #fff;
+    background: #000;
+    font-size: max(1vw, 1.5rem);
+    padding: max(1rem, 0.5rem);
+    border-radius: max(2rem, 1%);    
+    border: #fff;
+    border-style: solid;
+    transition: all 0.5s ease-in;    
+    cursor: pointer;
+}
+
+.my-button:hover {       
+    background: #fff;
+    color: #000;
+    font-size: max(1vw, 2rem);
+    transition: all 0.5s ease-in;                 
+    cursor: pointer;
+}
+
+form {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    font-size: max(1.5vw, 1.2rem);
+    margin: 1rem;
+}
